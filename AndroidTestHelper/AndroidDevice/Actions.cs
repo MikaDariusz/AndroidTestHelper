@@ -22,6 +22,7 @@ namespace AndroidTestHelper.Device
             this.output = output;
         }
 
+        //simulates pressing power button using adb command
         public void pressPowerButtons()
         {
             List<Managed.Adb.Device> devices = AdbHelper.Instance.GetDevices(AndroidDebugBridge.SocketAddress);
